@@ -10,7 +10,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="re5et"
+export ZSH_THEME="wo0kie"
 
 # Comment this out to disable weekly auto-update checks
 export DISABLE_AUTO_UPDATE="true"
@@ -27,7 +27,10 @@ export PATH="/Users/sam/Developer/share/python:/Users/sam/dev/c2/c2-server/bin:$
 
 unsetopt auto_name_dirs
 
-figlet -f relief -w 1200 batman
+figlet -f relief -w 1200 `hostname -s`
+
+# nvm
+source $HOME/.nvm/nvm.sh
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
